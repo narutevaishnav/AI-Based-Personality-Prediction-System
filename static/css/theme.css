@@ -1,0 +1,590 @@
+/* ==========================================
+   Common Theme CSS
+   AI Personality Prediction System
+========================================== */
+
+/* ---------- Smooth Transition ---------- */
+
+body,
+.navbar,
+.dashboard-card,
+.analyze-card,
+.about-card,
+.stat-card,
+.work-card,
+.hero,
+section,
+table,
+.btn,
+input,
+textarea{
+
+    transition: all .35s ease;
+
+}
+
+
+/* ==========================================
+   LIGHT MODE
+========================================== */
+
+body.light-mode{
+
+    background:#f5f7fb;
+
+    color:#222;
+
+}
+
+
+/* ---------- Navbar ---------- */
+
+body.light-mode .custom-navbar{
+
+    background:#ffffff !important;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.12);
+
+}
+
+body.light-mode .navbar-brand,
+
+body.light-mode .nav-link{
+
+    color:#222 !important;
+
+}
+
+
+/* ---------- Hero ---------- */
+
+body.light-mode .hero{
+
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+
+}
+
+body.light-mode .hero-title{
+
+    color:#111;
+
+}
+
+body.light-mode .hero-text{
+
+    color:#555;
+
+}
+
+
+/* ---------- Cards ---------- */
+
+body.light-mode .dashboard-card,
+
+body.light-mode .about-card,
+
+body.light-mode .analyze-card,
+
+body.light-mode .stat-card,
+
+body.light-mode .work-card{
+
+    background:#ffffff;
+
+    color:#222;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+
+/* ---------- Headers ---------- */
+
+body.light-mode .dashboard-header,
+
+body.light-mode .analyze-header{
+
+    background:linear-gradient(135deg,#dbeafe,#f8fbff);
+
+    color:#111;
+
+}
+
+
+/* ---------- Table ---------- */
+
+body.light-mode table{
+
+    color:#222;
+
+}
+
+body.light-mode .table-dark{
+
+    background:#fff;
+
+}
+
+body.light-mode .table-dark th{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+body.light-mode .table-dark td{
+
+    background:#fff;
+
+}
+
+
+/* ---------- Input ---------- */
+
+body.light-mode .form-control{
+
+    background:#fff;
+
+    color:#222;
+
+    border:1px solid #ccc;
+
+}
+
+body.light-mode .form-control::placeholder{
+
+    color:#777;
+
+}
+
+
+/* ---------- Footer ---------- */
+
+body.light-mode footer{
+
+    background:#fff;
+
+    color:#222;
+
+}
+
+
+/* ---------- Progress ---------- */
+
+body.light-mode .progress{
+
+    background:#dcdcdc;
+
+}
+
+
+/* ---------- Buttons ---------- */
+
+body.light-mode .btn-outline-light{
+
+    border-color:#222;
+
+    color:#222;
+
+}
+
+body.light-mode .btn-outline-light:hover{
+
+    background:#222;
+
+    color:#fff;
+
+}
+/* ==========================================
+   OBJECTIVE / ABOUT CARDS LIGHT MODE FIX
+========================================== */
+
+body.light-mode .objective-card,
+body.light-mode .feature-card,
+body.light-mode .about-card,
+body.light-mode .card{
+
+    background:#ffffff !important;
+    color:#222 !important;
+
+}
+
+body.light-mode .objective-card h1,
+body.light-mode .objective-card h2,
+body.light-mode .objective-card h3,
+body.light-mode .objective-card h4,
+body.light-mode .objective-card h5,
+body.light-mode .objective-card h6,
+body.light-mode .objective-card p,
+
+body.light-mode .feature-card h1,
+body.light-mode .feature-card h2,
+body.light-mode .feature-card h3,
+body.light-mode .feature-card h4,
+body.light-mode .feature-card h5,
+body.light-mode .feature-card h6,
+body.light-mode .feature-card p,
+
+body.light-mode .about-card h1,
+body.light-mode .about-card h2,
+body.light-mode .about-card h3,
+body.light-mode .about-card h4,
+body.light-mode .about-card h5,
+body.light-mode .about-card h6,
+body.light-mode .about-card p{
+
+    color:#222 !important;
+
+}
+
+body.light-mode .objective-card i,
+body.light-mode .feature-card i,
+body.light-mode .about-card i{
+
+    color:#6f63ff !important;
+
+}
+/* ===== LIGHT MODE TEXT FIX ===== */
+
+body.light-mode .section-title,
+body.light-mode .hero-title,
+body.light-mode .stat-card h2,
+body.light-mode .work-card h4,
+body.light-mode .cta-section h2,
+body.light-mode .footer-logo,
+body.light-mode .footer-title,
+body.light-mode .developer-card h5{
+    color:#111 !important;
+}
+
+body.light-mode .hero-text,
+body.light-mode .section-text,
+body.light-mode .work-card p,
+body.light-mode .stat-card p,
+body.light-mode .footer-desc,
+body.light-mode .developer-card span,
+body.light-mode .footer-contact p,
+body.light-mode .footer-bottom{
+    color:#555 !important;
+}
+
+body.light-mode .footer{
+    background:#ffffff !important;
+}
+
+body.light-mode .developer-card{
+    background:#f8f9fc !important;
+}
+
+body.light-mode .stats-section,
+body.light-mode .working-section{
+    background:#eef2f7 !important;
+}
+
+body.light-mode .about-preview{
+    background:#ffffff !important;
+}
+/* ==========================================
+   LOGIN PAGE LIGHT MODE
+========================================== */
+
+body.light-mode{
+
+    background:#f5f7fb !important;
+
+}
+
+body.light-mode .login-card{
+
+    background:#ffffff !important;
+
+    color:#222 !important;
+
+}
+
+body.light-mode .login-card h1,
+
+body.light-mode .login-card h3,
+
+body.light-mode label,
+
+body.light-mode .register-link{
+
+    color:#222 !important;
+
+}
+
+body.light-mode .login-card p{
+
+    color:#555 !important;
+
+}
+
+body.light-mode .form-control{
+
+    background:#ffffff !important;
+
+    color:#222 !important;
+
+    border:1px solid #ccc !important;
+
+}
+
+body.light-mode .form-control::placeholder{
+
+    color:#777 !important;
+
+}
+body.light-mode .register-card{
+    background:#ffffff;
+    color:#222;
+}
+
+body.light-mode .register-card h2,
+body.light-mode .register-card label,
+body.light-mode .login-text{
+    color:#222;
+}
+
+body.light-mode .login-text a{
+    color:#6C63FF;
+}
+
+/* ==========================================
+   FOOTER (ALWAYS DARK)
+========================================== */
+
+body.light-mode .footer{
+
+    background:#060b18 !important;
+
+    color:#fff !important;
+
+}
+
+body.light-mode .footer h2,
+body.light-mode .footer h3,
+body.light-mode .footer p,
+body.light-mode .footer span,
+body.light-mode .footer li{
+
+    color:#fff !important;
+
+}
+
+body.light-mode .footer a{
+
+    color:#d5d5e8 !important;
+
+}
+
+body.light-mode .footer a:hover{
+
+    color:#7c5cff !important;
+
+}
+
+body.light-mode .footer i{
+
+    color:#7c5cff !important;
+
+}
+
+body.light-mode .developer-card{
+
+    background:#101a33 !important;
+
+    color:#fff !important;
+
+}
+/* ==========================================
+   DASHBOARD LIGHT MODE
+========================================== */
+
+body.light-mode{
+
+    background:#f3f6fb !important;
+
+    color:#222;
+
+}
+
+body.light-mode .dashboard-navbar{
+
+    background:#ffffff !important;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+body.light-mode .navbar-brand{
+
+    color:#222 !important;
+
+}
+
+body.light-mode .hero-card,
+body.light-mode .analysis-card,
+body.light-mode .trait-card,
+body.light-mode .overall-card,
+body.light-mode .glass-section,
+body.light-mode .insight-card,
+body.light-mode .action-card{
+
+    background:#ffffff !important;
+
+    color:#222 !important;
+
+    border:1px solid #e5e7eb !important;
+
+}
+
+body.light-mode .hero-title,
+body.light-mode .hero-subtitle,
+body.light-mode .trait-header h4,
+body.light-mode .section-title h2,
+body.light-mode .section-title h3,
+body.light-mode .analysis-card h5,
+body.light-mode .overall-card h3,
+body.light-mode .dashboard-footer h4{
+
+    color:#111 !important;
+
+}
+
+body.light-mode p,
+body.light-mode span{
+
+    color:#555 !important;
+
+}
+
+body.light-mode .premium-progress{
+
+    background:#dbe3ef !important;
+
+}
+
+body.light-mode .dashboard-footer{
+
+    background:#ffffff !important;
+
+    border-top:1px solid #ddd;
+
+}
+
+body.light-mode .footer-links a{
+
+    color:#222 !important;
+
+}
+body.light-mode #themeToggle,
+body.light-mode .btn-glass{
+
+    display:flex !important;
+
+    align-items:center;
+    justify-content:center;
+
+    color:#222 !important;
+
+    background:#ffffff !important;
+
+    border:1px solid #dcdcdc !important;
+
+    visibility:visible !important;
+
+    opacity:1 !important;
+
+}
+
+body.light-mode #themeToggle i{
+
+    color:#222 !important;
+
+}
+.overall-circle{
+
+    width:170px;
+    height:170px;
+
+    margin:30px auto;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:42px;
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(135deg,#4f46e5,#06b6d4);
+
+}
+
+
+/* ==========================================
+   AI FEATURES + OCEAN TRAITS — LIGHT MODE FIX
+========================================== */
+
+body.light-mode .features-section,
+body.light-mode .traits-section{
+
+    background:#f5f7fb !important;
+
+}
+
+body.light-mode .features-section .section-badge,
+body.light-mode .traits-section .section-badge{
+
+    background:rgba(108,92,231,.12) !important;
+
+    color:#6c5ce7 !important;
+
+}
+
+body.light-mode .features-section .section-title h2,
+body.light-mode .traits-section .section-title h2{
+
+    color:#111 !important;
+
+}
+
+body.light-mode .features-section .section-title p,
+body.light-mode .traits-section .section-title p{
+
+    color:#555 !important;
+
+}
+
+body.light-mode .trait-card{
+
+    background:#ffffff !important;
+
+    border:1px solid #e5e7eb !important;
+
+}
+
+body.light-mode .trait-card h4{
+
+    color:#111 !important;
+
+}
+
+body.light-mode .trait-card p,
+body.light-mode .trait-card ul li{
+
+    color:#555 !important;
+
+}
+
+body.light-mode .feature-icon i,
+body.light-mode .trait-icon i{
+
+    color:#ffffff !important;
+
+}

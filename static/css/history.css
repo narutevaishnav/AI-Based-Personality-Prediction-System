@@ -1,0 +1,934 @@
+/* =====================================================
+            GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* =====================================================
+                    ROOT
+===================================================== */
+
+:root{
+
+    --primary:#4F46E5;
+    --secondary:#6366F1;
+    --success:#22C55E;
+    --danger:#EF4444;
+    --warning:#F59E0B;
+    --info:#06B6D4;
+
+    --white:#ffffff;
+    --dark:#0f172a;
+
+    --glass:rgba(255,255,255,.08);
+    --border:rgba(255,255,255,.15);
+
+}
+
+
+/* =====================================================
+                    BODY
+===================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+
+    background:linear-gradient(135deg,#0f172a,#1e293b,#111827);
+    min-height:100vh;
+    color:#fff;
+    overflow-x:hidden;
+
+}
+
+
+/* =====================================================
+                    NAVBAR
+===================================================== */
+
+.custom-navbar{
+
+    background:rgba(15,23,42,.75);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.navbar-brand{
+
+    font-size:1.5rem;
+    font-weight:700;
+
+}
+
+.nav-link{
+
+    color:#fff !important;
+    margin-left:10px;
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#60a5fa !important;
+
+}
+
+.nav-link.active{
+
+    color:#38bdf8 !important;
+
+}
+
+
+/* =====================================================
+                    HEADER
+===================================================== */
+
+.history-header{
+
+    padding-top:130px;
+    padding-bottom:60px;
+
+}
+
+.history-header h1{
+
+    font-size:3rem;
+    font-weight:700;
+
+}
+
+.history-header p{
+
+    color:#cbd5e1;
+    font-size:1.1rem;
+    margin-top:15px;
+
+}
+
+
+/* =====================================================
+                HISTORY SECTION
+===================================================== */
+
+.history-section{
+
+    padding-bottom:60px;
+
+}
+
+.history-card{
+
+    background:rgba(255,255,255,.07);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.history-card h3{
+
+    font-weight:700;
+
+}
+
+
+/* =====================================================
+                SEARCH BOX
+===================================================== */
+
+#searchInput{
+
+    height:50px;
+
+    border-radius:12px;
+
+    border:none;
+
+    background:rgba(255,255,255,.12);
+
+    color:#fff;
+
+    padding-left:18px;
+
+}
+
+#searchInput::placeholder{
+
+    color:#d1d5db;
+
+}
+
+#searchInput:focus{
+
+    background:rgba(255,255,255,.18);
+
+    color:#fff;
+
+    box-shadow:0 0 15px rgba(79,70,229,.4);
+
+}
+
+
+/* =====================================================
+                TABLE CONTAINER
+===================================================== */
+
+.table-responsive{
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    margin-top:20px;
+
+}
+/* =====================================================
+                    TABLE
+===================================================== */
+
+.table{
+
+    margin-bottom:0;
+    color:#fff;
+    border-collapse:separate;
+    border-spacing:0;
+
+}
+
+.table thead{
+
+    background:linear-gradient(135deg,#4F46E5,#6366F1);
+
+}
+
+.table thead th{
+
+    padding:18px;
+    border:none;
+    text-align:center;
+    font-weight:600;
+    color:#fff;
+    letter-spacing:.5px;
+
+}
+
+.table tbody tr{
+
+    background:rgba(255,255,255,.04);
+    transition:.35s;
+
+}
+
+.table tbody tr:hover{
+
+    background:rgba(79,70,229,.15);
+    transform:scale(1.01);
+
+}
+
+.table tbody td{
+
+    padding:18px;
+    vertical-align:middle;
+    border-color:rgba(255,255,255,.06);
+
+}
+
+
+/* =====================================================
+                    BADGES
+===================================================== */
+
+.badge{
+
+    padding:8px 14px;
+    font-size:.85rem;
+    border-radius:30px;
+    font-weight:600;
+
+}
+
+.bg-success{
+
+    background:#22C55E !important;
+
+}
+
+.bg-info{
+
+    background:#06B6D4 !important;
+    color:#fff !important;
+
+}
+
+.bg-warning{
+
+    background:#F59E0B !important;
+    color:#111 !important;
+
+}
+
+.bg-danger{
+
+    background:#EF4444 !important;
+
+}
+
+.bg-primary{
+
+    background:#4F46E5 !important;
+
+}
+
+
+/* =====================================================
+                ACTION BUTTONS
+===================================================== */
+
+.action-btn{
+
+    width:40px;
+    height:40px;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    margin:0 3px;
+
+    color:#fff;
+
+}
+
+.action-btn i{
+
+    font-size:16px;
+
+}
+
+
+/* ================= VIEW ================= */
+
+.view-btn{
+
+    background:#3B82F6;
+
+}
+
+.view-btn:hover{
+
+    background:#2563EB;
+    transform:translateY(-3px);
+
+}
+
+
+/* ================= DOWNLOAD ================= */
+
+.download-btn{
+
+    background:#22C55E;
+
+}
+
+.download-btn:hover{
+
+    background:#16A34A;
+    transform:translateY(-3px);
+
+}
+
+
+/* ================= DELETE ================= */
+
+.delete-btn{
+
+    background:#EF4444;
+
+}
+
+.delete-btn:hover{
+
+    background:#DC2626;
+    transform:translateY(-3px);
+
+}
+
+
+/* =====================================================
+                ACTION COLUMN
+===================================================== */
+
+.action-group{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+}
+
+
+/* =====================================================
+                TABLE SCROLL
+===================================================== */
+
+.table-responsive::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-responsive::-webkit-scrollbar-track{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+
+    background:#4F46E5;
+    border-radius:20px;
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover{
+
+    background:#6366F1;
+
+}
+/* =====================================================
+                EMPTY HISTORY
+===================================================== */
+
+.empty-history{
+
+    padding:80px 20px;
+    text-align:center;
+
+}
+
+.empty-history i{
+
+    font-size:70px;
+    color:#94A3B8;
+    margin-bottom:20px;
+
+}
+
+.empty-history h4{
+
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:15px;
+
+}
+
+.empty-history p{
+
+    color:#CBD5E1;
+    font-size:16px;
+    margin-bottom:30px;
+
+}
+
+.empty-history .btn{
+
+    border-radius:50px;
+    padding:12px 35px;
+    font-weight:600;
+
+}
+
+
+/* =====================================================
+                BACK BUTTON
+===================================================== */
+
+.back-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+
+    background:linear-gradient(135deg,#4F46E5,#6366F1);
+
+    color:#fff;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(79,70,229,.35);
+
+}
+
+.back-btn:hover{
+
+    transform:translateY(-4px);
+
+    color:#fff;
+
+    box-shadow:0 18px 35px rgba(79,70,229,.45);
+
+}
+
+.back-btn i{
+
+    font-size:20px;
+
+}
+
+
+/* =====================================================
+                    FOOTER
+===================================================== */
+
+.footer{
+
+    margin-top:80px;
+
+    padding:30px 0;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(12px);
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer p{
+
+    margin:0;
+
+    color:#CBD5E1;
+
+    font-size:15px;
+
+}
+
+
+/* =====================================================
+                RESPONSIVE
+===================================================== */
+
+@media(max-width:992px){
+
+.history-header h1{
+
+font-size:2.4rem;
+
+}
+
+.history-card{
+
+padding:25px;
+
+}
+
+.table th,
+.table td{
+
+font-size:14px;
+padding:14px;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.history-header{
+
+padding-top:110px;
+
+}
+
+.history-header h1{
+
+font-size:2rem;
+
+}
+
+.history-header p{
+
+font-size:15px;
+
+}
+
+.history-card{
+
+padding:20px;
+
+}
+
+#searchInput{
+
+margin-bottom:20px;
+
+}
+
+.action-group{
+
+flex-direction:column;
+gap:8px;
+
+}
+
+.back-btn{
+
+width:100%;
+
+}
+
+}
+
+
+@media(max-width:576px){
+
+.history-header h1{
+
+font-size:1.7rem;
+
+}
+
+.history-card{
+
+padding:15px;
+
+}
+
+.table{
+
+font-size:13px;
+
+}
+
+.badge{
+
+font-size:12px;
+
+padding:6px 10px;
+
+}
+
+.footer p{
+
+font-size:13px;
+
+}
+
+}
+/* =====================================================
+                GLASS EFFECT
+===================================================== */
+
+.glass{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+}
+
+
+/* =====================================================
+                SMOOTH ANIMATION
+===================================================== */
+
+.fade-up{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+.zoom-in{
+
+    animation:zoomIn .6s ease;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+                CARD HOVER
+===================================================== */
+
+.history-card{
+
+    transition:.35s ease;
+
+}
+
+.history-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+
+/* =====================================================
+                TABLE ROW ANIMATION
+===================================================== */
+
+tbody tr{
+
+    animation:tableFade .5s ease;
+
+}
+
+@keyframes tableFade{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+
+/* =====================================================
+                BUTTON RIPPLE EFFECT
+===================================================== */
+
+.action-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.action-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+    height:0;
+
+    background:rgba(255,255,255,.35);
+
+    border-radius:50%;
+
+    transform:translate(-50%,-50%);
+
+    left:50%;
+    top:50%;
+
+    transition:.45s;
+
+}
+
+.action-btn:hover::after{
+
+    width:120px;
+    height:120px;
+
+}
+
+
+/* =====================================================
+                SEARCH INPUT EFFECT
+===================================================== */
+
+#searchInput{
+
+    transition:.35s;
+
+}
+
+#searchInput:focus{
+
+    transform:scale(1.02);
+
+}
+
+
+/* =====================================================
+                CUSTOM SELECTION
+===================================================== */
+
+::selection{
+
+    background:#6366F1;
+
+    color:#fff;
+
+}
+
+
+/* =====================================================
+                SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(180deg,#4F46E5,#7C3AED);
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:linear-gradient(180deg,#4338CA,#6D28D9);
+
+}
+
+
+/* =====================================================
+                PAGE LOAD
+===================================================== */
+
+body{
+
+    animation:pageLoad .5s ease;
+
+}
+
+@keyframes pageLoad{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* =====================================================
+                FOOTER HOVER
+===================================================== */
+
+.footer{
+
+    transition:.35s;
+
+}
+
+.footer:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+.table-responsive{
+    overflow-x:auto;
+}
+
+.table{
+    min-width:1300px;
+}
+
+
+/* =====================================================
+                END
+===================================================== */

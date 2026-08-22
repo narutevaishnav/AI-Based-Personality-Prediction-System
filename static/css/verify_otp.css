@@ -1,0 +1,297 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(135deg,#0f172a,#111827,#020617);
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* ===========================
+   BACKGROUND BLUR CIRCLES
+=========================== */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:#2563eb;
+
+    border-radius:50%;
+
+    top:-120px;
+    left:-120px;
+
+    filter:blur(120px);
+
+    opacity:.35;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:#7c3aed;
+
+    border-radius:50%;
+
+    bottom:-120px;
+    right:-120px;
+
+    filter:blur(120px);
+
+    opacity:.30;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.container{
+
+    width:420px;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:28px;
+
+    padding:45px;
+
+    text-align:center;
+
+    box-shadow:
+
+    0 15px 45px rgba(0,0,0,.45);
+
+    z-index:10;
+
+}
+/* ===========================
+   HEADING
+=========================== */
+
+.container h2{
+
+    color:#ffffff;
+
+    font-size:32px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.container p{
+
+    color:#cbd5e1;
+
+    font-size:15px;
+
+    margin-bottom:35px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   INPUT
+=========================== */
+
+form input{
+
+    width:100%;
+
+    padding:16px 20px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:18px;
+
+    text-align:center;
+
+    letter-spacing:6px;
+
+    outline:none;
+
+    transition:.35s;
+
+}
+
+form input::placeholder{
+
+    color:#94a3b8;
+
+    letter-spacing:2px;
+
+}
+
+form input:focus{
+
+    border-color:#3b82f6;
+
+    box-shadow:
+
+    0 0 18px rgba(59,130,246,.45);
+
+    background:rgba(255,255,255,.10);
+
+}
+/* ===========================
+   BUTTON
+=========================== */
+
+form button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    transition:.35s;
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,.35);
+
+}
+
+form button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(37,99,235,.45);
+
+}
+
+form button:active{
+
+    transform:scale(.98);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:480px){
+
+    .container{
+
+        width:92%;
+
+        padding:35px 25px;
+
+    }
+
+    .container h2{
+
+        font-size:26px;
+
+    }
+
+    form input{
+
+        font-size:16px;
+
+        letter-spacing:4px;
+
+    }
+
+}
+
+/* ===========================
+   SMALL FADE ANIMATION
+=========================== */
+
+.container{
+
+    animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

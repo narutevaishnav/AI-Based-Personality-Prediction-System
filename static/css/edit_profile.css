@@ -1,0 +1,226 @@
+/* ===============================
+   EDIT PROFILE PAGE
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#081120;
+
+    color:#fff;
+
+    min-height:100vh;
+
+}
+
+/* Navbar */
+
+.navbar{
+
+    background:#0d1b2a;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+}
+
+/* Card */
+
+.card{
+
+    background:rgba(20,30,50,.95);
+
+    border:none;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.card-body{
+
+    padding:45px;
+
+}
+
+/* Heading */
+
+h2{
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+/* Profile Image */
+
+.profile-image{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    border:5px solid #6f63ff;
+
+    object-fit:cover;
+
+    transition:.35s;
+
+}
+
+.profile-image:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px #6f63ff;
+
+}
+
+/* Labels */
+
+.form-label{
+
+    font-weight:600;
+
+    color:#d8d8d8;
+
+}
+
+/* Inputs */
+
+.form-control{
+
+    background:#16233b;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    border-radius:12px;
+
+    padding:14px;
+
+}
+
+.form-control:focus{
+
+    background:#1d2d50;
+
+    color:#fff;
+
+    border-color:#6f63ff;
+
+    box-shadow:0 0 15px rgba(111,99,255,.35);
+
+}
+
+.form-control::placeholder{
+
+    color:#bfbfbf;
+
+}
+
+/* File Upload */
+
+input[type=file]{
+
+    padding:12px;
+
+}
+
+/* Buttons */
+
+.btn{
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    padding:12px 28px;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:linear-gradient(135deg,#6f63ff,#4f8cff);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 20px rgba(111,99,255,.35);
+
+}
+
+.btn-secondary{
+
+    background:#444;
+
+    border:none;
+
+}
+
+.btn-secondary:hover{
+
+    background:#555;
+
+}
+
+/* Footer */
+
+footer{
+
+    color:#a5a5a5;
+
+    font-size:15px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.card-body{
+
+padding:25px;
+
+}
+
+.profile-image{
+
+width:130px;
+
+height:130px;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:10px;
+
+}
+
+.d-flex{
+
+flex-direction:column;
+
+}
+
+}

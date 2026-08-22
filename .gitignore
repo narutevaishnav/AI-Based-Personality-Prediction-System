@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+venv/
+env/
+database.db
+tempCodeRunnerFile.py
+static/uploads/
+saved_model/
+ocean_bert_hf.pth
+
+training/predict_backup.py

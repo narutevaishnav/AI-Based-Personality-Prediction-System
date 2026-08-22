@@ -1,0 +1,571 @@
+/* ==========================================
+            GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#081120;
+
+    color:#fff;
+
+    min-height:100vh;
+
+}
+
+/* ==========================================
+            NAVBAR
+========================================== */
+
+.custom-navbar{
+
+    background:#111C33;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#fff !important;
+
+}
+
+.navbar-brand i{
+
+    color:#6C63FF;
+
+}
+
+.nav-link{
+
+    color:#d5d5d5 !important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#6C63FF !important;
+
+}
+
+.nav-link.active{
+
+    color:#6C63FF !important;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+           PROFILE SECTION
+========================================== */
+
+.profile-section{
+
+    padding:60px 0;
+
+}
+
+/* ==========================================
+            PROFILE CARD
+========================================== */
+
+.profile-card{
+
+    background:#111C33;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.30);
+
+    transition:.35s;
+
+}
+
+.profile-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.profile-image{
+
+    width:160px;
+
+    height:160px;
+
+    border-radius:50%;
+
+    border:5px solid #6C63FF;
+
+    object-fit:cover;
+
+    box-shadow:0 0 25px rgba(108,99,255,.35);
+
+}
+
+.profile-card h2{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.profile-card p{
+
+    color:#c9d0df;
+
+    font-size:17px;
+
+    margin-bottom:10px;
+
+}
+
+.profile-card i{
+
+    color:#6C63FF;
+
+    margin-right:8px;
+
+}
+/* ==========================================
+            STATISTICS CARDS
+========================================== */
+
+.stats-card{
+
+    background:#16223d;
+
+    border-radius:20px;
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(108,99,255,.25);
+
+}
+
+.stats-card i{
+
+    font-size:42px;
+
+    color:#6C63FF;
+
+    margin-bottom:18px;
+
+}
+
+.stats-card h3{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+.stats-card p{
+
+    color:#b8c2d6;
+
+    font-size:16px;
+
+    margin:0;
+
+}
+
+/* ==========================================
+        PERSONALITY CARD
+========================================== */
+
+.personality-card{
+
+    margin-top:35px;
+
+    background:#111C33;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.personality-card h3{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    color:#fff;
+
+}
+
+.personality-card h3 i{
+
+    color:#6C63FF;
+
+    margin-right:10px;
+
+}
+
+.personality-result{
+
+    text-align:center;
+
+}
+
+.personality-result h1{
+
+    font-size:70px;
+
+    font-weight:800;
+
+    color:#6C63FF;
+
+    margin-bottom:15px;
+
+}
+
+.personality-result h4{
+
+    font-size:28px;
+
+    color:#00D084;
+
+    margin-bottom:20px;
+
+}
+
+.personality-result p{
+
+    color:#c9d0df;
+
+    font-size:17px;
+
+    line-height:30px;
+
+    max-width:750px;
+
+    margin:auto;
+
+}
+/* ==========================================
+        PERSONALITY PROGRESS BARS
+========================================== */
+
+.progress{
+
+    height:24px;
+
+    border-radius:30px;
+
+    background:#1d2945;
+
+    overflow:hidden;
+
+    margin-top:8px;
+
+    margin-bottom:20px;
+
+}
+
+.progress-bar{
+
+    font-weight:600;
+
+    font-size:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:30px;
+
+    transition:width 1s ease;
+
+}
+
+/* ==========================================
+          ACTION BUTTONS
+========================================== */
+
+.btn{
+
+    padding:12px 28px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-primary{
+
+    background:#6C63FF;
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#574bff;
+
+    transform:translateY(-3px);
+
+}
+
+.btn-warning{
+
+    color:#fff;
+
+    border:none;
+
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-danger{
+
+    border:none;
+
+}
+
+.btn-danger:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+            THEME BUTTON
+========================================== */
+
+.theme-btn{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#6C63FF;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    z-index:9999;
+
+}
+
+.theme-btn:hover{
+
+    transform:rotate(20deg) scale(1.08);
+
+    background:#5848ff;
+
+}
+
+.theme-btn i{
+
+    font-size:20px;
+
+}
+
+/* ==========================================
+             LIGHT MODE
+========================================== */
+
+body.light-mode{
+
+    background:#eef3fb;
+
+    color:#222;
+
+}
+
+body.light-mode .custom-navbar{
+
+    background:#ffffff;
+
+}
+
+body.light-mode .navbar-brand{
+
+    color:#222 !important;
+
+}
+
+body.light-mode .nav-link{
+
+    color:#333 !important;
+
+}
+
+body.light-mode .profile-card,
+
+body.light-mode .stats-card,
+
+body.light-mode .personality-card{
+
+    background:#ffffff;
+
+    color:#222;
+
+}
+
+body.light-mode .profile-card h2,
+
+body.light-mode .stats-card h3,
+
+body.light-mode .personality-card h3,
+
+body.light-mode .personality-result h1{
+
+    color:#222;
+
+}
+
+body.light-mode .profile-card p,
+
+body.light-mode .stats-card p,
+
+body.light-mode .personality-result p{
+
+    color:#555;
+
+}
+
+body.light-mode .progress{
+
+    background:#dfe6ef;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.profile-card{
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.profile-image{
+
+width:130px;
+
+height:130px;
+
+margin-bottom:20px;
+
+}
+
+.profile-card h2{
+
+font-size:30px;
+
+}
+
+.personality-result h1{
+
+font-size:50px;
+
+}
+
+.personality-result h4{
+
+font-size:22px;
+
+}
+
+.stats-card{
+
+margin-bottom:20px;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:15px;
+
+}
+
+}

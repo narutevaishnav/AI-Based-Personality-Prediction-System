@@ -1,0 +1,359 @@
+/* =========================================
+   ABOUT PAGE HEADER
+========================================= */
+
+.page-header {
+    padding: 170px 0 100px;
+    background: linear-gradient(135deg, #08111F, #0E1B32);
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.page-header p {
+    font-size: 20px;
+    color: #c8cdd8;
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+    padding: 100px 0;
+    background: #08111F;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 25px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.about-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .page-header h1 {
+        font-size: 42px;
+    }
+
+    .about-section {
+        text-align: center;
+    }
+
+    .about-image {
+        width: 70%;
+        margin: 0 auto 40px;
+    }
+
+    .about-section h2 {
+        font-size: 34px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .page-header {
+        padding: 140px 0 70px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .page-header p {
+        font-size: 16px;
+    }
+
+    .about-section h2 {
+        font-size: 28px;
+    }
+
+    .about-section p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+/* =========================================
+   PROJECT OBJECTIVES
+========================================= */
+
+.objectives-section{
+
+    padding:100px 0;
+
+    background:#0D1628;
+
+}
+
+.objectives-section .section-title{
+
+    color:#fff;
+
+    font-size:46px;
+
+    font-weight:700;
+
+}
+
+.objectives-section .section-text{
+
+    color:#c8cdd8;
+
+    font-size:18px;
+
+}
+
+
+/* =========================================
+   TEAM SECTION
+========================================= */
+
+.team-card{
+
+    background:#111C33;
+
+    padding:40px 25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.team-card img{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+    border:4px solid #6C63FF;
+
+}
+
+.team-card h4{
+
+    color:#fff;
+
+    margin-bottom:8px;
+
+}
+
+.team-card p{
+
+    color:#c8cdd8;
+
+}
+
+
+/* =========================================
+   WORKFLOW SECTION
+========================================= */
+
+.workflow-section{
+
+    padding:100px 0;
+
+    background:#08111F;
+
+}
+
+.flow-box{
+
+    background:#111C33;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.flow-box:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.flow-box i{
+
+    font-size:50px;
+
+    color:#6C63FF;
+
+    margin-bottom:18px;
+
+}
+
+.flow-box h4{
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+.flow-box p{
+
+    color:#c8cdd8;
+
+}
+
+.flow-arrow{
+
+    font-size:40px;
+
+    color:#6C63FF;
+
+    margin-top:55px;
+
+}
+
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.cta-section .btn-light{
+
+    border-radius:50px;
+
+    padding:15px 40px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.cta-section .btn-light:hover{
+
+    background:#08111F;
+
+    color:#fff;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer{
+
+    background:#050B16;
+
+    padding:35px 0;
+
+}
+
+.footer h4{
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+}
+
+.footer p{
+
+    color:#b8c0d3;
+
+    margin:0;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media(max-width:992px){
+
+.team-card{
+
+margin-bottom:30px;
+
+}
+
+.flow-arrow{
+
+display:none;
+
+}
+
+.workflow-section{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.objectives-section .section-title{
+
+font-size:32px;
+
+}
+
+.team-card{
+
+padding:30px 20px;
+
+}
+
+.flow-box{
+
+margin-bottom:25px;
+
+}
+
+}

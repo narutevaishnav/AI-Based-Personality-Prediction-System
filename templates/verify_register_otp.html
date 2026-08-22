@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Verify Registration OTP | Personality AI</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/verify_register_otp.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Verify Registration OTP</h2>
+
+    <p>
+
+        Enter the 6-digit verification code sent to your email to complete your registration.
+
+    </p>
+
+    <!-- Flash Message -->
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+
+        {% if messages %}
+
+            {% for category, message in messages %}
+
+                <div class="flash {{ category }}">
+
+                    {{ message }}
+
+                </div>
+
+            {% endfor %}
+
+        {% endif %}
+
+    {% endwith %}
+
+    <form method="POST">
+
+        <input
+
+            type="text"
+
+            name="otp"
+
+            placeholder="Enter 6-Digit OTP"
+
+            maxlength="6"
+
+            minlength="6"
+
+            autocomplete="off"
+
+            required>
+
+        <button type="submit">
+
+            Verify OTP
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

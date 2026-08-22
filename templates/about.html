@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About | Personality AI</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+            <i class="bi bi-cpu-fill"></i> Personality AI
+        </a>
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+           <ul class="navbar-nav ms-auto">
+
+    <li class="nav-item">
+        <a class="nav-link" href="/" data-lang="home">Home</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link active" href="/about" data-lang="about">About</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/analyze" data-lang="analyze">Analyze</a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="/dashboard" data-lang="dashboard">Dashboard</a>
+    </li>
+
+</ul>
+            <button
+class="btn btn-outline-light ms-3"
+onclick="toggleTheme()">
+
+<i id="themeIcon" class="bi bi-moon-fill"></i>
+
+</button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- ================= PAGE HEADER ================= -->
+
+<section class="page-header">
+
+    <div class="container text-center">
+
+        <h1>About Our Personaliity AI</h1>
+
+        <p>
+
+            Learn more about the AI Based Personality Prediction System.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <<img src="{{ url_for('static', filename='images/about.png') }}"
+                          class="about-image"
+                alt="About">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h2>AI Based Personality Prediction System</h2>
+
+                <p>
+
+                    This project is a web-based application that predicts
+                    personality traits using Artificial Intelligence and
+                    Machine Learning by analyzing public X (Twitter) profiles.
+
+                </p>
+
+                <p>
+
+                    The platform provides a simple and interactive dashboard
+                    where users can explore personality insights.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+<!-- ================= PROJECT OBJECTIVES ================= -->
+
+<section class="objectives-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <h2 class="section-title">Personality AI Objectives</h2>
+
+            <p class="section-text">
+                The main objectives of our AI Based Personality Prediction System.
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+
+                <div class="work-card">
+
+                    <i class="bi bi-person-check-fill"></i>
+
+                    <h4>Personality Analysis</h4>
+
+                    <p>
+                        Predict user personality traits using Artificial Intelligence.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+                <div class="work-card">
+
+                    <i class="bi bi-speedometer2"></i>
+
+                    <h4>Fast Performance</h4>
+
+                    <p>
+                        Display personality insights quickly through a modern web interface.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+                <div class="work-card">
+
+                    <i class="bi bi-shield-lock-fill"></i>
+
+                    <h4>Secure System</h4>
+
+                    <p>
+                        Maintain privacy and provide a secure user experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= MISSION & VISION ================= -->
+
+<section class="about-preview">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-6 mb-4">
+
+                <div class="work-card">
+
+                    <i class="bi bi-bullseye"></i>
+
+                    <h3>Our Mission</h3>
+
+                    <p>
+                        To develop an intelligent platform that helps users understand
+                        personality traits through Artificial Intelligence.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-6 mb-4">
+
+                <div class="work-card">
+
+                    <i class="bi bi-eye-fill"></i>
+
+                    <h3>Our Vision</h3>
+
+                    <p>
+                        To create a reliable AI-powered personality prediction system
+                        with a simple and modern user experience.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= PROJECT FLOW ================= -->
+
+<section class="stats-section">
+
+    <div class="container text-center">
+
+        <h2 class="section-title mb-5">
+            Personality AI Workflow
+        </h2>
+
+        <div class="row">
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <h4>User</h4>
+
+                    <p>Opens Website</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <h4>Frontend</h4>
+
+                    <p>Collect User Input</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <h4>AI Model</h4>
+
+                    <p>Analyze Personality</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="stat-card">
+
+                    <h4>Dashboard</h4>
+
+                    <p>Display Results</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container text-center">
+
+        <h2>Ready to Explore?</h2>
+
+        <p>
+            Start using our AI Based Personality Prediction System today.
+        </p>
+
+        <a href="/analyze" class="btn btn-light btn-lg">
+            Analyze Now
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Left -->
+        <div class="footer-left">
+
+            <h2>
+                <i class="fas fa-microchip"></i>
+                Personality AI
+            </h2>
+
+            <p>
+                AI Based Personality Prediction System using Artificial Intelligence,
+                Machine Learning and Natural Language Processing (NLP).
+            </p>
+
+            <div class="contact">
+                <p><i class="fas fa-envelope"></i> narutevaishnav@gmail.com</p>
+
+                <p><i class="fas fa-phone"></i> +91 9226120917</p>
+
+                <p><i class="fas fa-location-dot"></i> Pune, Maharashtra, India</p>
+            </div>
+
+        </div>
+
+
+
+<!-- Middle -->
+<div class="footer-middle">
+
+    <h3>Quick Links</h3>
+
+    <ul>
+
+        <li>
+            <a href="{{ url_for('home') }}">
+                <i class="fas fa-house"></i> Home
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('about') }}">
+                <i class="fas fa-circle-info"></i> About
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('login') }}">
+                <i class="fas fa-right-to-bracket"></i> Login
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('register') }}">
+                <i class="fas fa-user-plus"></i> Register
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ url_for('analyze') }}">
+                <i class="fas fa-chart-simple"></i> Analyze
+            </a>
+        </li>
+
+      
+
+    </ul>
+
+</div>
+
+
+
+        <!-- Right -->
+        <div class="footer-right">
+
+            <h2>
+                <i class="fas fa-users"></i>
+                Developed By
+            </h2>
+
+            <!-- Developer 1 -->
+
+            <div class="developer-card">
+
+                <div class="developer-info">
+
+                    <div class="avatar">
+                        👨‍💻
+                    </div>
+
+                    <div>
+
+                        <h3>Vaishnav Narute</h3>
+
+                        <span>Full Stack Developer</span>
+
+                        <div class="social">
+<!-- GitHub -->
+<a href="https://github.com/narutevaishnav"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fab fa-github"></i>
+</a>
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/vaishnav-narute-4775b5343"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i>
+</a>
+
+<!-- X (Twitter) -->
+<a href="https://x.com/NaruteVais79593"
+   target="_blank"
+   rel="noopener noreferrer">
+    <i class="fab fa-x-twitter"></i>
+</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Developer 2 -->
+
+            <div class="developer-card">
+
+                <div class="developer-info">
+
+                    <div class="avatar">
+                        👨‍💻
+                    </div>
+
+                    <div>
+
+                        <h3>Aditya Sanap</h3>
+
+                        <span>AI / ML Developer</span>
+
+                        <div class="social">
+
+                            <a href="#"><i class="fab fa-github"></i></a>
+
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+        © 2026 Personality AI. All Rights Reserved.
+    </div>
+
+</footer>
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+<!-- Theme JS -->
+<script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+
+
+</body>
+
+
+</body>
+
+</html>
